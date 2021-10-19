@@ -1,0 +1,69 @@
+header, nav{
+	margin-top: 2%;
+	float: left;
+	height: 15%;
+}
+
+header{
+	position: relative;
+	background-color: aqua;
+	width: 70%;
+}
+
+#TituloWeb, #Descripcion{
+	text-align:right;
+}
+
+.Titulo{
+    text-align: center;
+}
+
+nav{
+	background-color:blueviolet;
+	width: 30%;
+}
+
+#Logo{	
+	position: relative;
+	float: left;
+	width:50px;
+	height:50px;
+}
+
+main{
+	float: left;
+	width: 60%;
+	background-color: coral;
+	height: 60%;
+}
+
+p{
+	text-align: center;
+	margin: 2%;
+}
+aside{
+	height: 60%;
+	float: left;
+	width: 40%;
+	background-color: darkseagreen;
+}
+
+.Publicidad{
+	display: block;
+	margin: auto;
+}
+
+footer{
+	float: left;
+	height: 15%;
+	background-color: black;
+	width: 100%;
+}
+
+#FDesc{
+	color: blanchedalmond;
+}
+
+#color{
+    background-color: brown;
+}
