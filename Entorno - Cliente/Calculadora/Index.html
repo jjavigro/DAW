@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+        function suma(){
+            var suma=document.getElementById('Op1')+document.getElementById('Op2');
+            var listado="<p>"+suma+"</p>";
+            document.getElementById('Resultado').innerHTML=suma;
+        }
+    </script>
+    <form name="Formulario">
+        <label for="Op1">Operador 1:</label>
+        <input type="text" name="Op1" id="Op1" />
+        <br>
+        <label for="Op2">Operador 2:</label>
+        <input type="text" name="Op2" id="Op2" />
+        <br>
+        <input type="button" onclick="Suma()" value="Suma"/>
+        <br>
+        <p id="Resultado"></p>
+    </form>
+</body>
+</html>

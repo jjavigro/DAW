@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombres lista</title>
+</head>
+<body>
+    <script>
+        var nombre="";
+        function obtenerNombre(){
+
+            nombre= document.getElementById('Nombre').value;
+            var listado="<ul><li>"+nombre+"</li></ul>";
+            document.getElementById('Lista').innerHTML+=listado;
+
+        }
+
+    </script>
+
+    <form name="Formulario">
+        <label for="fname">Nombre:</label>
+        <input type="text" placeholder="Nombre" name="Nombre" id="Nombre" />
+        <input type="button" onclick="obtenerNombre()" value="Add"/>
+        <ul>
+            <li>
+                <p id="Lista"></p>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
