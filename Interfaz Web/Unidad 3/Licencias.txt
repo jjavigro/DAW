@@ -1,0 +1,30 @@
+1.La legislación sobre Propiedad Intelectual protege los derechos de autor, los 
+derechos conexos y la propiedad industrial. Podríamos decir que los derechos de 
+autor se reconocen dentro de la propiedad intelectual igual que las patentes o diseños 
+industriales.
+
+2.Patentes, Marcas, Diseño industrial e Indicaciones Geograficas.
+
+3.El Tratado de Funcionamiento de la Unión Europea (TFUE), que entró en vigor en 2009, 
+confirió a la Unión competencia explícita en materia de derechos de propiedad intelectual 
+(artículo 118).
+
+4.Una licencia de software es un contrato entre el licenciante (autor/titular de los derechos
+de explotación/distribución) y el licenciatario2​ (usuario consumidor, profesional o empresa)
+del programa informático, para utilizarlo cumpliendo una serie de términos y condiciones 
+establecidas dentro de sus cláusulas.
+
+5.Copyright: todos los derechos reservados. Copyleft: algunos derechos reservados.
+
+6.Licencias GPL:permite su libre distribución, modificación y uso siempre y cuando, 
+en el caso de que el software se modifique, el nuevo software que se desarrolle como 
+resultado quede obligatoriamente con la misma licencia.
+
+Licencia BSD:. El software bajo esta licencia es la menos restrictiva para los desarrolladores,
+ el software puede ser vendido y no hay obligaciones de incluir el código fuente.
+
+Microsoft y Office.
+
+7.Reconocimiento (by), Reconocimiento - No Comercial (by-nc), Reconocimiento - No Comercial - 
+Compartir Igual (by-nc-sa), Reconocimiento - No Comercial - Sin Obra Derivada (by-nc-nd), 
+Reconocimiento - Compartir Igual (by-sa), Reconocimiento - Sin Obra Derivada (by-nd).

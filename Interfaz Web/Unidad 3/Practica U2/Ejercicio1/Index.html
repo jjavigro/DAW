@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muslito</title>
+        <style> 
+            div#body {
+            margin: auto; 
+            width:710px; 
+            }
+            
+            div#header { 
+            margin: 10px auto 10px auto; 
+            width: 710px;
+            height: 150px;
+            border: solid 3px blue; 
+            border-radius: 15px; 
+            }
+            
+            body.sidebar-main div#footer { 
+            margin:25px auto 25px auto; 
+            width:710px; 
+            border:solid 3px green; 
+            border-radius: 15px; 
+            /*clear: right;*/ 
+            }
+            
+            body.main-sidebar div#main, body.sidebar-main div#main { 
+            width: 490px; 
+            border:solid 4px green; 
+            /* clear:both;*/ 
+            }
+
+            #header-img-muslito{
+                width: 15%;
+                height: 15%;
+                float: left;
+            }
+            #main-img-muslito{
+                width: 35%;
+                height: 35%;
+            }
+            ul{
+                text-decoration: none;
+                float: left;
+            }
+            li{
+                list-style: none;
+            }
+            a:hover{
+                color: black;
+                text-decoration: none;
+            }
+            a:active{
+                color: pink;
+            }
+        </style>
+    
+    </head>
+
+    <body class="sidebar-main"> 
+    <body class="main-sidebar"> 
+        <div id="header">
+            <div id="header-logo"><img id="header-img-muslito"src="img/muslito.jpg" alt="Logo"> </div>
+            <div id="header-titulo"><h1>El muslito</h1></div>
+        </div> 
+        <div id="body">
+            <div id="sidebar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Donde Estamos</a></li>
+                    <li><a href="#">Nuestra Carta</a></li>
+                    <li><a href="#">Horarios</a></li>
+                </ul> 
+            <div id ="main"><img id="main-img-muslito" src="img/muslito.jpg" alt="img"> </div> 
+            </div>
+        </div> 
+        <div id="footer">Pie de página</div> 
+    </body> 
+</html>
