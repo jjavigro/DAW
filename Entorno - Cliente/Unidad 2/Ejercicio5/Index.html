@@ -13,6 +13,7 @@
             border: solid 1px black;
             width: 20%;
             height: 600px;
+            margin-left: 39%;
         }
         td{
             border: solid 1px black;
@@ -20,6 +21,10 @@
         input{
             width: 100%;
             height: 100%;
+        }
+        #Resultado{
+            height: 35px;
+            padding: 5%;
         }
     </style>
 
@@ -32,20 +37,20 @@
 
         function Resolver(){
             var solucion= eval(operacion);
-            alert(operacion+" = "+parseFloat(solucion.toFixed(2)));//solucion.toFixed(2)
+            document.getElementById("Resultado").innerHTML=operacion+" = "+parseFloat(solucion.toFixed(2));
             operacion="";
             solucion="";
         }
 
         function Limpiar(){
             operacion="";
-            alert("Se han vaciado los registros");
+            document.getElementById("Resultado").innerHTML=operacion;
         }
     </script>
 
     <table>
         <tr>
-            <td colspan="4">Resultado</td>
+            <td id="Resultado" colspan="4">Calculadora</td>
         </tr>
         <tr>
             <td><input type="button" value="1" onclick="Enviar('1')"></td>
