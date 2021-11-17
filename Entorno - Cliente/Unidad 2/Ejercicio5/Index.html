@@ -31,9 +31,8 @@
         }
 
         function Resolver(){
-            var solucion= parseFloat(operacion);
-            alert(operacion);
-            alert(solucion);
+            var solucion= eval(operacion);
+            alert(operacion+" = "+parseFloat(solucion.toFixed(2)));//solucion.toFixed(2)
             operacion="";
             solucion="";
         }
