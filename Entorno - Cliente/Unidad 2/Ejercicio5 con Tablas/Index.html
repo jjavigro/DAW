@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacluladora</title>
+</head>
+<body>
+
+    <style>
+        table{
+            border: solid 1px black;
+            width: 20%;
+            height: 600px;
+            margin-left: 39%;
+        }
+        td{
+            border: solid 1px black;
+        }
+        input{
+            width: 100%;
+            height: 100%;
+        }
+        #Resultado{
+            height: 35px;
+            padding: 5%;
+        }
+    </style>
+
+    <script>
+        let operacion="";
+
+        function Enviar(valor){
+           operacion=operacion+valor;
+        }
+
+        function Resolver(){
+            var solucion= eval(operacion);
+            document.getElementById("Resultado").innerHTML=operacion+" = "+parseFloat(solucion.toFixed(2));
+            operacion="";
+            solucion="";
+        }
+
+        function Limpiar(){
+            operacion="";
+            document.getElementById("Resultado").innerHTML=operacion;
+        }
+    </script>
+
+    <table>
+        <tr>
+            <td id="Resultado" colspan="4">Calculadora</td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="Enviar('1')"></td>
+            <td><input type="button" value="2" onclick="Enviar('2')"></td>
+            <td><input type="button" value="3" onclick="Enviar('3')"></td>
+            <td><input type="button" value="+" onclick="Enviar('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="Enviar('4')"></td>
+            <td><input type="button" value="5" onclick="Enviar('5')"></td>
+            <td><input type="button" value="6" onclick="Enviar('6')"></td>
+            <td><input type="button" value="-" onclick="Enviar('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="Enviar('7')"></td>
+            <td><input type="button" value="8" onclick="Enviar('8')"></td>
+            <td><input type="button" value="9" onclick="Enviar('9')"></td>
+            <td><input type="button" value="*" onclick="Enviar('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="/" onclick="Enviar('/')"></td>
+            <td><input type="button" value="0" onclick="Enviar('0')"></td>
+            <td><input type="button" value="." onclick="Enviar('.')"></td>
+            <td><input type="button" value="=" onclick="Resolver()"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="button" value="Clear All" onclick="Limpiar()"></td>
+        </tr>
+    </table>
+</body>
+</html>
