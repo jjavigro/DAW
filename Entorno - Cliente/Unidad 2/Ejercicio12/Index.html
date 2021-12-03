@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function atras(){
+        window.history.back();
+    }
+
+    function delante(){
+        window.history.forward();
+    }
+    function Ultima(){
+        window.history.go(window.history.length);
+    }
+</script>
+<body>
+    <input type="button" value="Atras" onclick="atras()">
+    <input type="button" value="Delante" onclick="delante()">
+    <input type="button" value="Ultima web" onclick="Ultima()">
+</body>
+</html>

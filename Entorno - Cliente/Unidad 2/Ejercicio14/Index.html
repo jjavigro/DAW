@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Selecciona un color para el fondo de la pagina</h1>");
+        document.write("<select id='Select'><option>Rojo</option><option>Azul</option><option>Amarillo</option><option>Verde</option></select>");
+        function fondo(){
+            if(document.getElementById("Select").value=="Rojo"){
+                document.bgColor="red";
+            }else if(document.getElementById("Select").value=="Azul"){
+                document.bgColor="blue";
+            }else if(document.getElementById("Select").value=="Amarillo"){
+                document.bgColor="yellow";
+            }else if(document.getElementById("Select").value=="Verde"){
+                document.bgColor="green";
+            }
+        }
+        document.write("<input type='button' value='Modificar color' onclick='fondo()'>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function abrirNuevaVentana() {
+        ventana = window.open("", "", "width=500,height=250");
+        ventana.document.write("<p>¡HOLA!</p> <input type='button' value='Emancipar' onclick='emancipar()'>");
+    }
+    function cerrarVentana (){
+        ventana.close();
+    }
+    </script>
+<body>
+    <button onclick="abrirNuevaVentana()">Abrir</button>
+    <button onclick="cerrarVentana()">Cerrar</button>
+</body>
+</html>
