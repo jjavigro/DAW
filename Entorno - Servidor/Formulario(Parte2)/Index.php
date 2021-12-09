@@ -13,6 +13,11 @@
         echo "";
         echo "<br>";
         echo "<a href='Ejercicio1/Index.php'>-Solucion</a>";
+        
+        echo "<h4>Ejercicio 2</h4>";
+        echo "";
+        echo "<br>";
+        echo "<a href='Ejercicio2/Index.php'>-Solucion</a>";
         ?>
 </body>
 </html>
