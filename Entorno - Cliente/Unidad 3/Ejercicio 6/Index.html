@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Herencia</title>
+</head>
+<body>
+    <h2>JavaScript Arrays</h2>
+<script>
+    //HERENCIA
+
+    var parent={
+        val:42,
+        get:function fn(){
+            return this.val;
+        }
+    }
+
+    console.log(parent.get());
+
+    const child = Object.create(parent);
+    child.val=11;
+    const grandChild = Object.create(child);
+
+    console.log(grandChild.get());
+
+    function Person(first, last, age, gender, interest){
+        this.name={
+            first,
+            last
+        };
+        this.age=age;
+        this.gender=gender;
+        this.interest=interest;
+    }
+
+    var juan= new Person ('juan', 'vazquez', 19, 'male', ['soccer', 'tennis'])
+    Person.prototype.greeting=function() {
+        alert('Hola ' + this.name.first + '-');
+    };
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    #Div1{
+        border-color: blue;
+        border-width: 3px;
+        border-style: solid;
+    }
+    #Div2{
+        border-color: red;
+        border-width: 3px;
+        border-style: solid;
+    }
+</style>
+<body>
+    <div id="Div1">
+        Div1
+        <div id="Div2">
+            Div2
+        </div>
+    </div>
+    <input type="button" value="Append" id="append"></input>
+    <input type="button" value="Prepend" id="prepend"></input>
+    <input type="button" value="After" id="after"></input>
+    <input type="button" value="Before" id="before"></input>
+    <input type="button" value="Remove" id="remove"></input>
+    <input type="button" value="Empty" id="empty"></input>
+    <script>
+        $(document).ready(function(){
+            $("#append").click(function(){
+                $("#Div1").prepend("Detras");
+            });
+            $("#prepend").click(function(){
+                $("#Div1").prepend("Delante");
+            });
+            $("#prepend").click(function(){
+                $("#Div1").prepend("Delante");
+            });
+            $("#remove").click(function(){
+                $("#Div1").remove();
+            });
+            $("#empty").click(function(){
+                $("#Div1").empty();
+            });
+        });
+    </script>
+</body>
+</html>

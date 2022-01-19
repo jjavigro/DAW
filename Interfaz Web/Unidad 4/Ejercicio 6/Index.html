@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    #Cuadrado{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+    }
+</style>
+<body>
+    <div id="FadeIn">
+        FadeIn
+    </div>
+    <div id="FadeOut">
+        FadeOut
+    </div>
+    <div id="FadeToggle">
+        FadeToggle
+    </div>
+    <div id="FadeTo">
+        FadeTo
+        <input type="text" id="Opacidad">
+    </div>
+    <div id="SlideToggle">
+        SlideToggle
+    </div>
+    <div id="Cuadrado">
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#FadeIn").click(function(){
+                $("#Cuadrado").fadeIn("fast");
+            });
+            $("#FadeOut").click(function(){
+                $("#Cuadrado").fadeOut("slow");
+            });
+            $("#FadeToggle").click(function(){
+                $("#Cuadrado").fadeToggle(1000);
+            });
+            $("#FadeTo").click(function(){
+                $("#Cuadrado").fadeTo("slow",$("#Opacidad").val());
+            });
+            $("#SlideToggle").click(function(){
+                $("#Cuadrado").slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

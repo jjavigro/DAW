@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej6</title>
+</head>
+<body>
+    <input type="button" value="Abrir Ventana" onclick="AbrirVentana(mensaje)">
+    <p>Enviar mensaje a la nueva ventana:</p>
+    <input type="text" id="Mensaje">
+    <input type="button" value="Enviar Mensaje" onclick="EnviarMensaje(mensaje)">
+    <script>
+        var recibido=" ";
+        var mensaje=" ";
+        function MensajeRecibido(recibido){
+            recibido="Recibido!";
+        }
+        document.write("<br>Acuse de recibido:"+ recibido);
+        function EnviarMensaje(mensaje){ 
+            mensaje=document.getElementById('Mensaje').value;
+        }
+        function AbrirVentana(mensaje){
+        ventana = window.open("", "", "width=500,height=250");
+        ventana.document.write("<h1>Nueva Ventana</h1>");
+        ventana.document.write("<p>Mensaje Recibido:"+mensaje);
+        ventana.document.write("</p><input type='button' value='Recibido' onclick='MensajeRecibido(recibido)'>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="coche1">
+    </div>
+    <div id="coche2">
+    </div>
+    <script>
+        const coche={Matricula:"6116JHD", Modelo:"Seat Ibiza", Color:"Blanco",
+        };
+        const coche2={Matricula:"6112JHD", Modelo:"Toyota Corlla", Color:"Blanco",
+        };
+        const Coches=[coche, coche2];
+            document.getElementById("coche1").innerHTML=Coches[0].Matricula;
+            document.getElementById("coche2").innerHTML=Coches[1].Matricula;
+
+    </script>
+</body>
+</html>

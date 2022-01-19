@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Tamaño fibonacci:<input type="text" id="tamano"></label>
+    <input type="submit" onclick="fibonacci()">
+    <div id="solucion">
+    </div>
+    <script>
+        //var tamano=0;
+        function fibonacci(tamano){
+            var tamano=document.getElementById("tamano").value;
+            const Fibonacci=[];
+            var N1=0;
+            var N2=1;
+            var Suma=1;
+            for(var i=0; i<tamano;i++){
+                Fibonacci.push(Suma);
+                Suma=N1+N2;
+                N1=N2;
+                N2=Suma;
+            }
+            let solucion=Fibonacci[0];
+            var contador=0;
+            var sumaSol=0;
+            for(var i=1; i<=tamano;i++){
+                if(contador==tamano-1){
+                    solucion += " = " + sumaSol;
+                }else{
+                    sumaSol=sumaSol+Fibonacci[i];
+                    solucion += " + "+ Fibonacci[i];
+                    contador++;
+                }
+            }
+            document.getElementById("solucion").innerHTML=solucion;
+        }
+    </script>
+</body>
+</html>

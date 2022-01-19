@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    #cuadrado{
+        height: 200px;
+        width: 15%;
+        background-color: black;
+        margin: 300px auto;
+    }
+</style>
+<body>
+    <input type="button" value="Stop" id="Stop"></input>
+    <div id="cuadrado">
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#cuadrado").click(function(){
+                    var Cuadrado = $("#cuadrado");
+                    $("#cuadrado").animate({height: '350px', width: '30%', margin: "240px auto"}, "slow");
+                    $("#cuadrado").animate({height: '500px', width: '55%',margin: "180px auto"}, "slow");
+                    $("#cuadrado").animate({height: '600px', width: '70%',margin: "120px auto"}, "slow");
+                    $("#cuadrado").animate({height: '800px', width: '85%',margin: "60px auto"}, "slow");
+                    $("#cuadrado").animate({height: '950px', width: '100%', margin: "0px auto"}, "slow");
+            }); 
+            $("#Stop").click(function(){
+                $("#cuadrado").stop(true);
+            });
+        }); 
+    </script>
+</body>
+</html>
