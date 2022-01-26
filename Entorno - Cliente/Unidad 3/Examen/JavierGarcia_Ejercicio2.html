@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cadena="Entorno Cliente 4";
+        let cadenaMinuscula=cadena.toLowerCase();
+        var contador=0;
+        for(var i=0;i<cadenaMinuscula.length;i++){
+            function ComprobarVocales(cadena){
+                if(cadenaMinuscula.charAt(i)=="a"){
+                    return true;
+                }else if(cadenaMinuscula.charAt(i)=="e"){
+                    return true;
+                }else if(cadenaMinuscula.charAt(i)=="i"){
+                    return true;
+                }else if(cadena.charAt(i)=="o"){
+                    return true;
+                }else if(cadena.charAt(i)=="u"){
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            if (ComprobarVocales(cadena)==true){
+                contador++
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="animacion">
+        hola
+    </p>
+    <input type="submit" value="Animar"></input>
+    <script>
+
+        $(document).ready(function(){
+            $("#animacion").click(function(){
+                    $(this).animate({top: '250px', fontSize: '6em', opacity: '0.4'}, "slow");     
+            }); 
+        }); 
+    </script>
+</body>
+</html>

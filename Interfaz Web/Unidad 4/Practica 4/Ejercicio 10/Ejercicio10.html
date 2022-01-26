@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js" integrity="sha512-g0etrk7svX8WYBp+ZDIqeenmkxQSXjRDTr08ie37rVFc99iXFGxmD0/SCt3kZ6sDNmr8sR0ISHkSAc/M8rQBqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+      
+        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+        <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+</head>
+      
+      <body>
+        <script type="text/javascript">
+            $(document).ready(function(){
+             $("#jquery_jplayer_1").jPlayer({
+              ready: function () {
+               $(this).jPlayer("setMedia", {
+                m4a: "https://mediateca.educa.madrid.org/audio/hex7h1wp7tt464v1/fs.mp4",
+                oga: "https://mediateca.educa.madrid.org/audio/hex7h1wp7tt464v1/fs.ogg"
+               });
+              },
+              swfPath: "/js",
+              supplied: "m4a, oga"
+             });
+            });
+           </script>
+           <div id="jquery_jplayer_1"></div>
+           <div id="jp_container_1">
+            <a href="#" class="jp-play">Play</a>
+            <a href="#" class="jp-pause">Pause</a>
+           </div>
+           
+        <video
+          id="my-video"
+          class="video-js"
+          controls
+          preload="auto"
+          width="640"
+          height="264"
+          data-setup="{}"
+        >
+          <source src="samplevideo_1280x720_1mb.mp4" type="video/mp4" />
+          <source src="samplevideo_1280x720_1mb.webm" type="video/webm" />
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank"
+              >supports HTML5 video</a
+            >
+          </p>
+        </video>
+      
+        <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+      </body>
+</html>

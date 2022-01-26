@@ -8,8 +8,11 @@
 </head>
 <body>
     <script>
-        let URL=prompt("Introducir URL");
-        ventana = window.open
+        let url=prompt("Introducir URL");
+        url=encodeURI(url);
+        alert(url.substring("?"));
+        ventana = window.open("", "", "width=500,height=250");
+        ventana.document.write("¡HOLA!");
     </script>
 </body>
 </html>

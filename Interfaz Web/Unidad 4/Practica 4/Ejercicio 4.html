@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="p">Id</p>
+    <p>Etiqueta</p>
+    <p class="p">Clase</p>
+    <p dir="auto">Atributo</p>
+    <p title="title">Valor de Atributo</p>
+    <div>
+        <p>Selector Anidado</p>
+    </div>
+    <h3>Seleccion de varios elementos1</h3>
+    <h4>Seleccion de varios elementos2</h4>
+    <script>
+        $("*").css("color", "grey");
+        $("#p").css("background-color", "red");
+        $("p").css("font-weight", "bold");
+        $(".p").css("background-color", "red");
+        $("p[title='title']").css("background-color", "yellow");
+        $("p[dir]").css("background-color", "red");
+        $("div p").css("background-color", "purple");
+        $("h3, h4").css("background-color", "green");
+
+    </script>
+</body>
+</html>

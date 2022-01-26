@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!--Encuentra Div1.2 Parrafo1 y Li2 desde el primer div y Div1 Parrafo1  desde Div1.3 Parrafo1-->
+    <div>
+        <p>Div1 Parrafo1 </p>
+        <p>Div1 Parrafo2 </p>
+        <div>
+            <p>Div1.2 Parrafo1</p>
+            <ul>
+                <li>Li1</li>
+                <li>Li2</li>
+                <li>Li3</li>
+            </ul>
+            <div>
+                <p id="Inicio">Div1.3 Parrafo1</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("div").children().children("p");
+            $("div").children().children("ul").children().eq(1);
+            $("#Inicio").parent();
+        });
+    </script>
+</body>
+</html>
