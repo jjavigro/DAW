@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="boton" value="click me"  type="button">
+    <input id="boton2" value="Ok" onclick="alert(this.value)"  type="button">
+    <button id="boton3" onclick="alert(this.innerText)">OK</button>
+    <script>
+        function click(){
+            alert('click!')
+        }
+
+        boton.onclick=click;
+    </script>
+</body>
+</html>

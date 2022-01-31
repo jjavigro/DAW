@@ -1,0 +1,47 @@
+Grupo Carlos, Carmen, Javier.
+
+Entrevistador: Carlos.
+Entrevistado: Javier.
+Resumen: Carmen.
+
+Escena 1.
+
+Carlos: Javier Garcia?
+Javier: Yes, im here
+Carlos: You can come in.
+Javier: Sure.
+
+Escena 2.
+
+Carlos: Nice to meet you, my name is Carlos, I´m the head of the IT department in this company. What do you know about the job you are applying for?
+Javier: I know you are looking for a software developer specialized on java, so I consider myself a great applicant for the job.
+Carlos: What are your defects?
+Javier: I think I´m very impatient and I too obsesed about a task. 
+Carlos: Do you like to work in groups?
+Javier: Sure, I´m a good teammate but, sometimes I want to work by myself.
+Carlos: Have you ever work in this sector?
+Javier: I have spent five years working as networks and operating system teacher on FP Dual in the morning shift. In the evening I worked as a web developer.
+Carlos: Why did you leave that job?
+Javier: Being a teacher is a really exhausting job. Moreover, I aspire to be a better software developer and I believe this job could help me to improve my skills.
+Carlos: In this company we are looking for someone who knows about database management and network administrator and arquitecture. Which databases languages do you prefer?
+Javier: I like to use SQL because I think it is easier than MySQL. On the other hand, MySQL have better accessibility than SQL.
+Carlos: I have seen in your CV that you studied in Harvard. Do you intend to continue studying?
+Javier: I enjoy learning new technologies so, I´m interested in any courses related with this area.
+Carlos: We do offer training courses for all our employees, which are given by specialists on the corresponding subjects. 
+Javier: When would this courses be given?
+Carlos: I do not know for sure, but probably at the start of each new work project.
+Javier: In my previous workplace they didn't do this, it was awful. It delayed the whole project and then they punished us, completely absurd if you ask me.
+Carlos: Have they told you about your schedule?
+Javier: No, I haven't spoken with anybody, they just sent me the date of this interview.
+Carlos: Well, the work schedule is from 08:15 AM to 14:45 PM
+Javier: I´m totally fine with that. In fact, I could work some days in the afternoon if you need me too.
+Carlos: It won't be usually needed, whoever in case you have to do overtime you will be payed accordingly. 
+Do you have any doubts?
+Javier: When can I expect to hear from you?
+Carlos: We usually take one week to evaluate all the job applicants. 
+Javier: After reading my curriculum, is there something you think I need to improve?
+Carlos: In my opinion, you have all the technichal skills needed for a job like this. 
+Maybe you should try to train your soft skills. Do you have more questions?
+Javier: No, everything is clear, thank you very much.
+Carlos: You are welcome, we will be in touch.
+
