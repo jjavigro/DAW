@@ -40,30 +40,34 @@
 </style>
 <body>
     <div>
-        <div class="pane" id="1">
-            <button class="remove-button" onclick="CerrarPane('1')">[x]</button>
+        <div class="pane">
+            <button class="remove-button">[x]</button>
             <h3>Horse</h3>
             <p>The horse is one of two extant subspecies of Equus ferus. It is an odd-toed ungulate mammal belonging to the taxonomic family Equidae. The horse has evolved over the past 45 to 55 million years from a small multi-toed creature, Eohippus, into the large, single-toed animal of today.</p>
         </div>
-        <div class="pane" id="2">
-            <button class="remove-button" onclick="CerrarPane('2')">[x]</button>
+        <div class="pane">
+            <button class="remove-button">[x]</button>
             <h3>Donkey</h3>
             <p>The donkey or ass (Equus africanus asinus) is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years.</p>
         </div>
-        <div class="pane" id="3">
-            <button class="remove-button" onclick="CerrarPane('3')">[x]</button>
+        <div class="pane">
+            <button class="remove-button">[x]</button>
             <h3>Cat</h3>
             <p>The domestic cat (Latin: Felis catus) is a small, typically furry, carnivorous mammal. They are often called house cats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids and felines. Cats are often valued by humans for companionship and for their ability to hunt vermin.</p>
         </div>
     </div>
     <script>
-        function CerrarPane(x){
-
-            if (document.getElementById(x).style.display === "none") {
-                document.getElementById(x).style.display = "block";
-            } else {
-                document.getElementById(x).style.display = "none";
+        panes = document.getElementsByClassName("pane");
+        for (let index = 0; index < panes.length; index++) {
+            const element = panes[index];
+            element.addEventListener("click", closePane);
+            element.setAttribute("id", index);
+        }
+        function closePane(event) {
+            if(event.target.tagName=="BUTTON"){
+                event.currentTarget.style.display='none';
             }
+            //event.currentTarget.remove();
         }
     </script>
 </body>

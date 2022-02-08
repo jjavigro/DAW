@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<title>Posicionamiento flotante</title>
+	</head>
+    <style>
+        header, nav{
+            margin-top: 2%;
+            float: left;
+            height: 15%;
+        }
+
+        header{
+            position: relative;
+            background-color: aqua;
+            width: 70%;
+        }
+
+        .Titulo, #Descripcion{
+            text-align:center;
+        }
+
+        nav{
+            background-color:blueviolet;
+            width: 30%;
+        }
+
+        #Logo{	
+            position: relative;
+            float: left;
+            top: 5px;
+            left: 10px;
+            width:50px;
+            height:50px;
+        }
+
+        main{
+            float: left;
+            width: 60%;
+            background-color: coral;
+            height: 60%;
+        }
+
+        p{
+            text-align: center;
+            margin: 2%;
+        }
+        aside{
+            height: 60%;
+            float: left;
+            width: 40%;
+            background-color: darkseagreen;
+        }
+
+        .Publicidad{
+            display: block;
+            margin: auto;
+        }
+
+        footer{
+            float: left;
+            height: 15%;
+            background-color: black;
+            width: 100%;
+        }
+
+        #FNombre, #FFecha{
+            color: blanchedalmond;
+        }
+    </style>
+	<body>
+		<header>
+			<h2 class="Titulo">Titulo de la Pagina</h2>
+			<h4 id="Descripcion">Pequeña descripcion de la pagina web</h4>
+			
+		</header>
+
+		<nav>
+			<ul id="Menu">
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Seccion 1</a></li>
+				<li><a href="#">Seccion 2</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<h4 class="Titulo">Titulo Main1</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+			standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+			a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+		    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+			Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+			<h4 class="Titulo">Titulo Main2</h4>
+			<video src="img/Mercedes Glk - 1406 - Solo Video.mp4" width="600" height="300" autoplay muted loop></video><!--Pauta 1.2 (Medios tempodependientes)-->
+		</main>
+
+		<aside>
+			<img class="Publicidad" src="img/publi.png" alt="Publicidad"></img> <!--Pauta 1.1 (Alternativa textual)-->
+		</aside>
+
+		<footer>
+			<p id="FNombre">Javier Garcia Rodriguez</p>
+			<p id="FFecha">04/10/2021</p>
+		</footer>
+	</body>
+</html>

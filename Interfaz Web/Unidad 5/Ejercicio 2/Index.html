@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="Form" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <label>Nombre: <input type="text" id="nombre" name="nombre"></label><br>
+        <label>Apellidos: <input type="text" id="apellidos" name="apellido"></label><br>
+        <div id="sexo">
+            <label>Sexo: 
+                <label>Hombre: <input type="radio" name="genero" id="hombre"></label>
+                <label>Mujer: <input type="radio" name="genero" id="mujer"></label>
+            </label>
+        </div>
+        <div id="leguajes">
+            <label><input type="checkbox" id="ingles">Ingles</label><br>
+            <label><input type="checkbox" id="español">Español</label><br>
+            <label><input type="checkbox" id="aleman">Aleman</label><br>
+        </div>
+        <label>Elige un coche: </label>
+        <select name="coche" id="coche">
+            <option value="">Seleccione una opcion</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Ford">Ford</option>
+            <option value="Kia">Kia</option>
+        </select><br>
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+    <script>
+        function validateForm() {
+        let x = document.forms["Form"]["nombre"].value;
+        if (x == "") {
+            alert("Campo Nombre no puede estar vacio");
+            return false;
+        }
+        }
+    </script>
+</body>
+</html>
