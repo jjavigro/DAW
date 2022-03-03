@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Form validation: Task 1</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form name="Form"  onsubmit="return validateForm()" method="post">
+      <h2>Enter your support query</h2>
+      <ul>
+        <li>
+          <label for="uname">User name:</label>
+          <input type="text" name="uname" id="uname" required maxlength="100" minlenght="1">
+        </li>
+        <li>
+          <label for="email">Email address:</label>
+          <input type="email" name="email" id="email">
+        </li>
+        <li>
+          <label for="phone">Phone number:</label>
+          <input type="tel" name="phone" id="phone"required maxlength="9" minlength="9">
+        </li>
+        <li>
+          <label>Elige un coche: </label>
+          <select name="coche" id="coche" required>
+              <option value="">Seleccione una opcion</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Ford">Ford</option>
+              <option value="Kia">Kia</option>
+          </select><br>
+        </li>
+          <div id="lenguajes">
+            <label><input type="checkbox" id="ingles">Ingles</label><br>
+            <label><input type="checkbox" id="español">Español</label><br>
+            <label><input type="checkbox" id="aleman">Aleman</label><br>
+          </div>
+        <li>
+          <label for="comment">Comment:</label>
+          <textarea name="comment" id="comment" >
+          </textarea>
+        </li>
+        <li>
+          <input type="submit" value="Submit comment">
+        </li>
+      </ul>
+    </form>
+    <script>
+        function validateForm() {
+            for(var i=0;i<document.forms["Form"].length;i++){
+                let x = document.forms["Form"][i];
+                if (x.value.trim() == "") {
+                    document.getElementById(x.name).style.border="1px solid red";
+                    return false;
+                }
+                if(x.name=="phone"){
+                    if( !(/^\d{9}$/.test(x.value)) ) {
+                      document.getElementById(x.name).style.border="1px solid red";
+                        return false;
+                    }
+                }
+                if(x.name=="email"){
+                    if( !(/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(x.value)) ) {
+                      document.getElementById(x.name).style.border="1px solid red";
+                    return false;
+                    }
+                }
+            }
+        }
+    </script>
+  </body>
+
+</html>
